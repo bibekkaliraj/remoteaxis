@@ -25,13 +25,13 @@ import {
 
 export const LoginScreen = () => {
     return (
-        <Container size={420} my={40} className="bg-black">
-          <Title
-            align="center"
-            sx={(theme) => ({ fontFamily: `Greycliff CF, ${theme.fontFamily}`, fontWeight: 900 })}
-          >
-            Welcome back!
-          </Title>
+        <Container size={420} my={40}>
+          {/*<Title*/}
+          {/*  align="center"*/}
+          {/*  sx={(theme) => ({ fontFamily: `Greycliff CF, ${theme.fontFamily}`, fontWeight: 900 })}*/}
+          {/*>*/}
+            <div className="text-lg">Welcome back!</div>
+          {/*</Title>*/}
           <Text color="dimmed" size="sm" align="center" mt={5}>
             Do not have an account yet?{' '}
             <Anchor<'a'> href="#" size="sm" onClick={(event) => event.preventDefault()}>
@@ -48,7 +48,7 @@ export const LoginScreen = () => {
                 Forgot password?
               </Anchor>
             </Group>
-            <Button fullWidth mt="xl" >
+            <Button fullWidth mt="xl" variant={'subtle'}>
               Sign in
             </Button>
             <h1 className="text-red-300">hello world</h1>

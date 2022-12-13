@@ -1,31 +1,37 @@
-const colors = require("tailwindcss/colors");
+const colors = require('tailwindcss/colors')
 
 module.exports = {
-  // purge: [],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontSize: {
-      xs: ".75rem",
-      sm: ".875rem",
-      tiny: ".875rem",
-      base: "1rem",
-      lg: "1.125rem",
-      xl: "1.25rem",
-      "2xl": "1.5rem",
-      "3xl": "1.875rem",
-      "4xl": "2.25rem",
-      "5xl": "3rem",
-      "6xl": "4rem",
-      "7xl": "5rem",
+      'xs': '.75rem',
+      'sm': '.875rem',
+      'tiny': '.875rem',
+      'base': '1rem',
+      'lg': '1.125rem',
+      'xl': '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem',
+      '8xl': '6rem',
+      '9xl': '8rem',
     },
     colors: {
       ...colors,
       primary: {
-        700: "#3f3fca",
-        100: "#9f9fe5",
+        700: "rgba(126, 189, 65, 1)",
+        100: "rgba(126,189,65,0.36)",
+        50: "rgba(126,189,65,0.12)",
+      },
+      secondary: {
+        700: "#FF9D2B",
+        100: "rgb(250,156,60)",
       },
     },
-    extend: {},
     spacing: {
       none: 0,
       xs: "8px",
@@ -33,7 +39,12 @@ module.exports = {
       md: "24px",
       lg: "32px",
       xl: "48px",
-      xxl: "64px",
+      "2xl": "64px",
+      "3xl": "72px",
+      "4xl": "84px",
+      "5xl": "96px",
+      "6xl": "108px",
+      "7xl": "124px",
     },
     screens: {
       sm: "640px",
@@ -56,5 +67,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  content: ["./src/**/*.{js, jsx, ts, tsx}"],
-};
+}
