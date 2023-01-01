@@ -1,5 +1,5 @@
 export const Contact =()=>{
-    return <div>
+    return <div className={"py-xl"}>
         this is screen
     </div>
 }

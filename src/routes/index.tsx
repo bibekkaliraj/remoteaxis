@@ -5,7 +5,7 @@ import {WelcomeLayout} from "../layouts/Welcome.layout";
 const MainRoute = () => {
     return (
         <Routes>
-            <Route path={''} element={<WelcomeLayout/>} />
+            <Route path={'*'} element={<WelcomeLayout/>} />
         </Routes>
     );
 };
